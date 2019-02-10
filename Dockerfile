@@ -23,6 +23,6 @@ RUN apt-get update \
     && DEBIAN_FRONTEND=nointeractive apt-get install -y apt-utils vim curl memcached \
     zip imagemagick mysql-server
 
-EXPOSE 3000
+EXPOSE 80
 
 CMD [ "/bin/bash","/root/start.sh" ]
