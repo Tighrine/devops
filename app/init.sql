@@ -10,5 +10,5 @@ password varchar(255),
 email  varchar(50)
 );
 
-INSERT INTO user (first_name, last_name, password, email) VALUES ('MOHELLEBI', 'Massinissa', 'monPassword', 'massinissa.mohellebi@gmail.com');
+INSERT INTO user (first_name, last_name, password, email) VALUES ('Aghiles', 'TIGHRINE', 'monPassword', 'aghiles.tighrine2@gmail.com');
 

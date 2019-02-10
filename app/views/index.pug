@@ -42,7 +42,7 @@ html
             button.btn.btn-primary(type='submit', id="register") Sign up
             script
               | submit = document.getElementsByTagName("button")[0]
-              | submit.onclick = e => {
+              | /*submit.onclick = e => {
               |   e.preventDefault()
               |   const surname = document.getElementById('surname').value
               |   const name = document.getElementById('name').value
@@ -50,15 +50,19 @@ html
               |   const pwd2 = document.getElementById('pw2').value
               |   const email = document.getElementById('email').value
               |   const data = {"first_name": surname , "last_name": name, "password": password, "email": email}
+              |   console.log(data)
               |   if(password !== pwd2) alert('password not match !!')
               |   else{
-              |      fetch('http://localhost:3000/', {
+              |      fetch('http://localhost:80/register', {
               |       method: "POST",
+              |       mode: "cors",
               |        headers: {
-              |         "Content-Type": "application/json",
+              |         "Access-Control-Allow-Origin": "*",
+              |         "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",  
+              |         "Content-Type": "application/json"
               |        },
-              |        body: JSON.stringify(data), // body data type must match "Content-Type" header
+              |        body: JSON.stringify(data),
               |      })
-              |      .then(response => alert(JSON.stringify(response)));
+              |      .then(response => Location.reload(false));
               |    }          
-              | }
+              | }*/
